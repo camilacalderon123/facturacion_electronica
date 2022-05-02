@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('fonts/poppins/Poppins-Regular.ttf'); 
+ }
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('fonts/poppins/Poppins-Bold.ttf'); 
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('fonts/poppins/Poppins-Medium.ttf'); 
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('fonts/montserrat/Montserrat-Bold.ttf'); 
+}
+.title_client{
+	color:#0077b6;
+	font-weight: bold;
+}
+.img_client{
+	margin-left: 15px;
+	padding-right: 5px;
+}
+form .user-details{ /*inputs acomodados en línea*/
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+ 	margin: 20px 0 12px 0; /*margin top y bottom entre inputs*/
+
+}
+form .user-details .input-box{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	
+}
+.user-details .input-box input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+/*para los select*/
+.user-details .input-box select{
+	background: transparent;
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+	border-color:#ADE8F4; /*color borde inputs CAMBIARLO*/
+}
+form .buttom{
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	left: 500px;
+}
+form .button{
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	left: 500px;
+}
+form .button2{
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	left: 320px;
+	
+}
+.button_style{ /*tamaño boton*/
+	height: 65%;
+	width: 140%;
+	outline:none;
+	color:#fff;
+	border:none;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+	background:#00B4D8;
+}
+
+/*formulario responsive*/
+@media(max-height: 584px){
+	.container{
+		max-width: 100%;
+	}
+
+	form .user-details .input-box{
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	.container form .user-details{
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+
+	.user-details::-webkit-scrollbar{
+		width: 0;
+	}
+}

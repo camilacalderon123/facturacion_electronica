@@ -1,0 +1,74 @@
+.title_client{
+	color:#0077b6;
+	font-weight: bold;
+}
+form .usuario-detalles{ /*inputs acomodados en línea*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0; /*margin top y bottom entre inputs*/
+
+}
+form .usuario-detalles .input-caja{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+.usuario-detalle .input-caja .detalles{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	
+}
+.usuario-detalles .input-caja .input_factura{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+.usuario-detalles .input-caja input:focus,
+.usuario-detalle .input-caja input:valid{
+	border-color:#ADE8F4; /*color borde inputs CAMBIARLO*/
+}
+
+.button{
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	left: 500px;
+}
+
+.button_style{ /*tamaño boton*/
+	height: 65%;
+	width: 140%;
+	outline:none;
+	color:#fff;
+	border:none;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 5px;
+	background:#00B4D8;
+}
+
+@media(max-height: 584px){
+	.container{
+		max-width: 100%;
+	}
+
+	form .usuario-detalles .input-caja{
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	.container form .usuario-detalles{
+		max-height: 300px;
+		overflow-y: scroll;
+	}
+
+	.usuario-detalles::-webkit-scrollbar{
+		width: 0;
+	}
+}

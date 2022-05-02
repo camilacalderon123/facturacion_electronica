@@ -1,0 +1,78 @@
+form .input-box{
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+
+form .input-box .details{
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+/*inputs campos del cliente*/
+.input-box input{
+	height: 30px;
+	width: 40%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+.span_details{
+    color: #346add ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*campos del rango de numeracion*/
+.input-box-numeracion{
+    position: absolute;
+    left: 600px;
+}
+.input_numeracion{
+	height: 30px;
+	width: 40%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	border-bottom-width: 2px;
+    margin-left: 10px;
+}
+
+/*campos de la tabla*/
+td .input_tabla{
+	height: 30px;
+	width: 40%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+}
+/*select*/
+.select_opciones{
+	background: transparent;
+	color: #686a6ee3;
+	height: 30px;
+	width: 40%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px; /*el required no queda pegado a la izq*/
+	font-size: 16px;
+	border-bottom-width: 2px;
+	margin-left: 10px;
+}
+
+/*Boton edit*/
+.btn-edit{
+    border: 1px solid rgb(177, 172, 172);
+    margin-left: 2px;
+}
+
+.input-box .inputs:focus,
+.input-box .inputs:valid{
+	border-color:#ADE8F4; /*color borde inputs CAMBIARLO*/
+}
